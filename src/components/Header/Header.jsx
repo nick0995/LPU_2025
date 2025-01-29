@@ -9,7 +9,8 @@ function genRandomInt(max) {
 
 export default function Header() {
   const description = reactDescriptions[genRandomInt(3)];
-
+  console.log("HEADER COMPONENT");
+  
   return (
     <header>
       <img src={reactImg} alt="Stylized atom" />
