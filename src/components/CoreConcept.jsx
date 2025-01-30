@@ -1,6 +1,6 @@
-export default function CoreConcepts({ image, title, description }) {
+export default function CoreConcept({ image, title, description }) {
   console.log("CORE CONCEPTS COMPONENT");
-  
+
   return (
     <li>
       <img src={image} alt={title} />
