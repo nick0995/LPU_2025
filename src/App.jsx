@@ -1,6 +1,8 @@
-import Player from "./components/player";
+import Player from "./components/Player";
 
 function App() {
+  console.log("APP COMPONENT RENDERED");
+
   return (
     <main>
       <div id="game-container">
