@@ -9,6 +9,7 @@ import HomePage from "./pages/Home";
 import ProductPage from "./pages/Product";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+import ProductDetailPage from "./pages/ProductDetails";
 
 // const routeDefinitions = createRoutesFromElements(
 //   <Route>
@@ -19,12 +20,13 @@ import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/lpu",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/products", element: <ProductPage /> },
+      { path: "", element: <HomePage /> },
+      { path: "products", element: <ProductPage /> },
+      { path: "products/:productId", element: <ProductDetailPage /> },
     ],
   },
   ,
